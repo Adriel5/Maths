@@ -1,8 +1,22 @@
-const velObj=0.9999999999999999
-const fDeVel="c"
-const ondMed="d"
-const TempQuePas= 1000
-const MedDoTempQuePas="anos"
+const velObj=1
+const fDeVel="km/s"
+const ondMed="f"
+const TempQuePas= 30
+const MedDoTempQuePas="minutos"
+
+function resumo(VO,FdV,OM,TqP,MdTqP){
+    return(DifTemp(DilTemp(KmsVel(VO,FdV)),OM,TqP)+` ${MdTqP}`)
+}
+
+console.log(`Se uma pessoa que estivesse ${FoD()} de um objeto á uma velocidade de ${velObj}${fDeVel} cronometrasse ${TempQuePas} ${MedDoTempQuePas}, a pessoa que estivesse ${DoF()} do objeto iria cronometrar ${resumo(velObj,fDeVel,ondMed,TempQuePas,MedDoTempQuePas)}`)
+
+
+
+
+
+
+
+
 
 function KmsVel(v, f){
 if(f=="km/s"){
@@ -46,4 +60,3 @@ function FoD(){
     }
 }
 
-console.log(`Se uma pessoa que estivesse ${FoD()} de um objeto á uma velocidade de ${velObj}${fDeVel} cronometrasse ${TempQuePas} ${MedDoTempQuePas}, a pessoa que estivesse ${DoF()} do objeto iria cronometrar ${DifTemp(DilTemp(KmsVel(velObj,fDeVel)),ondMed,TempQuePas)} ${MedDoTempQuePas}`)
