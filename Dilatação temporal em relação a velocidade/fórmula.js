@@ -1,8 +1,8 @@
 const velObj=1
-const fDeVel="km/s"
+const fDeVel="c"
 const ondMed="f"
-const TempQuePas= 30
-const MedDoTempQuePas="minutos"
+const TempQuePas= 1
+const MedDoTempQuePas="hora"
 
 function resumo(VO,FdV,OM,TqP,MdTqP){
     return(DifTemp(DilTemp(KmsVel(VO,FdV)),OM,TqP)+` ${MdTqP}`)
@@ -52,6 +52,7 @@ function DoF(){
         return("fora")
     }
 }
+
 function FoD(){
     if(ondMed=="d"){
         return("dentro")
@@ -59,4 +60,5 @@ function FoD(){
         return("fora")
     }
 }
+
 
