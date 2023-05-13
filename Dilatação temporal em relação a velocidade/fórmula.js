@@ -1,8 +1,8 @@
-const velObj=1
-const fDeVel="c"
+const velObj=1500.59
+const fDeVel="km/h"
 const ondMed="f"
-const TempQuePas= 1
-const MedDoTempQuePas="hora"
+const TempQuePas= 59
+const MedDoTempQuePas="segundos"
 
 function resumo(VO,FdV,OM,TqP,MdTqP){
     return(DifTemp(DilTemp(KmsVel(VO,FdV)),OM,TqP)+` ${MdTqP}`)
